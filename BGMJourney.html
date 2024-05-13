@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagmati Journey</title>
+  <!-- Add any additional CSS or meta tags as needed -->
+  <style>
+    body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+  
+  /* Logo and Profile Image Styles */
+  .logo img {
+    max-width: 400px;
+  }
+  
+  .dp.profile img {
+    max-width: 60px;
+  }
+  
+  /* Button Styles */
+  .topbuttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; 
+  }
+  
+  .about-us,
+  .help {
+    background-color: #416fb4;
+    border-radius: 30px; 
+    color: white; 
+    padding: 12px 24px;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 0px; 
+  }                                 
+  
+  .about-us {
+    margin-left: 1200px; /* Adjust margin-left as needed */
+  }
+  
+  .help {
+    margin-right: 30px; /* Adjust margin-right as needed */
+  }
+  
+  /* Dropdown Styles */
+  .dp.profile {
+    position: relative;
+    display: inline-block;
+  }
+  h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .image-container {
+      text-align: center;
+    }
+    
+    .image-container img {
+     
+      max-width: 100%;
+      /* height: auto; */
+      height: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #416fb4;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="topbuttons">
+          <a href="aboutus.html" class="about-us">About Us</a>
+          <!-- <button class="about-us">About Us</button> -->
+       
+        </div>
+        <div class="topbuttons">
+          <a href="help.html" class="help">Help</a>
+          <!-- <button class="help">Help</button> -->
+        </div>
+        <div class="dp profile">
+          <img id="userIcon" src="dp.jpg" alt="account" onclick="toggleDropdown()">
+  </header>
+  <main>
+    <h1>Bagmati Journey</h1>
+    <div class="image-container">
+      <img src="bus4.jpeg" alt="Image 4">
+    </div>
+    <p>
+        Bagmati Journey Travels offers an unforgettable journey through the scenic beauty of Pokhara, Nepal. Our services include comfortable transportation, knowledgeable guides, and a range of tour packages to suit every traveler's needs.
+        Explore the serene lakes, majestic mountains, and cultural landmarks with Pokhara Travels. We are dedicated to providing a memorable and enriching travel experience for our customers.</p>
+    <table>
+        <tr>
+            <th>Total Seats</th>
+            <td>25</td>
+          </tr>
+          
+          <tr>
+            <th>Bus Number</th>
+            <td>98423</td>
+          </tr>
+        <tr>
+            <th>Bus Features</th>
+            <td>Restroom facilities<br>Reclining seats<br>Charging Ports</td>
+          </tr>
+          <tr>
+            <th>Seat Material</th>
+            <td>Padded Seats</td>
+          </tr>
+       
+      </table>
+  </main>
+  <footer>
+    © 2024 Saptakoshi Bus Tours. All Rights Reserved.
+  </footer>
+</body>
+</html>
